@@ -1,0 +1,14 @@
+body{
+    background-color: gray;
+
+}
+h3{
+    font-style: italic;
+    font: bold;
+}
+img{
+    
+    width: 300px;
+    height: 300px;
+    float: right;
+}
