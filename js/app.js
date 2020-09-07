@@ -28,18 +28,18 @@ else if (c=="no")
 }
 var x=prompt("Is JavaScript written in CSS?yes/no");
 x=x.toLowerCase();
-if(x =="yes")
+if(x =="no")
 {alert("Correct answer");}
-else if (x=="no")
+else if (x=="yes")
 {
     alert("InCorrect answer");
 }
 var y=prompt("Is the Head tag means content ?yes/no");
 y=y.toLowerCase();
 
-if(y =="yes")
+if(y =="no")
 {alert("Correct answer"+name);}
-else if (y=="no")
+else if (y=="yes")
 {
     alert("InCorrect answer"+name);
 }
