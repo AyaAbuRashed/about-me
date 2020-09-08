@@ -49,7 +49,8 @@ else if (y=="yes")
 {
     alert("InCorrect answer"+name);
 }
-num=Math.floor(Math.random() * 101);
+
+var num=Math.floor(Math.random() * 101);
 var g=prompt("guess a number between[0,100] you have only 4 opportunities");
 g=parseInt(g);
 for(var i=0;i<4;i++)
@@ -58,24 +59,42 @@ for(var i=0;i<4;i++)
      {alert("correct");
     score++;}
      else if(g<num)
-         {alert("too low");}
-     else{alert("too high")}
+         {alert("too low");
+         g=prompt("guess a number between[0,100] you have only 4 opportunities");
+        }
+     else{alert("too high");
+     g=prompt("guess a number between[0,100] you have only 4 opportunities");}
 }
 alert("the correct number is"+num);
 
 var cars = ["FERRARI", "VOLVO", "BMW","FORD" ,"LAMBORGHINI","MCLAREN ","BUGATTI CHIRON"];
-var r=prompt("guess one of the top fastest car in the world").toUpperCase;
-q=0;
-while(q<6)
+var r=prompt("guess one of the top fastest car in the world").toUpperCase();
+
+
+var q=0;
+var b=false;
+while(q<5)
 {
    for(i=0;i<cars.length;i++)
    {if(r==cars[i])
     { alert("correct");
         score++;
-        break;}
-q++;
+        b=true;
+        break; }
+        
+        
+    }
+    if(b){break;}
+     r=prompt("guess one of the top fastest car in the world").toUpperCase();
+    q++;
+
 }
 alert("Your score is"+score+"/7");
-}
 
-
+console.log("Is Html stands for hypertext markup language?yes/no");
+console.log("Is CSS stand for Cascading Style Sheets?yes/no");
+console.log("Is  JavaScript a programming language?yes/no");
+console.log("Is JavaScript written in CSS?yes/no");
+console.log("Is the Head tag means content ?yes/no");
+console.log("guess a number between[0,100] you have only 4 opportunities");
+console.log("guess one of the top fastest car in the world");
