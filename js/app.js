@@ -6,7 +6,7 @@ alert("welcome"+name);
 var a=prompt("Is Html stands for hypertext markup language?yes/no");
 a=a.toLowerCase();
 
-function first(a,score) {
+function first(a) {
     if(a =="yes")
     {alert("Correct answer");
     score++;}
@@ -15,11 +15,11 @@ function first(a,score) {
         alert("InCorrect answer");
     }
 }
-first(a,score);
+first(a);
 var b=prompt("Is CSS stand for Cascading Style Sheets?yes/no");
 b=b.toLowerCase();
 ;
-function second(b,score) {
+function second(b) {
     if(b=="yes")
     {alert("Correct answer");
     score++;}
@@ -28,11 +28,11 @@ function second(b,score) {
         alert("InCorrect answer");
     }
 }
-second(b,score)
+second(b);
 var c=prompt("Is  JavaScript a programming language?yes/no");
 c=c.toLowerCase();
 
-function third(c,score) {
+function third(c) {
     if(c =="yes")
     {alert("Correct answer");
     score++;}
@@ -41,11 +41,11 @@ function third(c,score) {
         alert("InCorrect answer");
     }
 }
-third(c,score);
+third(c);
 var x=prompt("Is JavaScript written in CSS?yes/no");
 x=x.toLowerCase();
 
-function four(x,score) {
+function four(x) {
     if(x =="no")
     {alert("Correct answer");
     score++;}
@@ -54,10 +54,10 @@ function four(x,score) {
         alert("InCorrect answer");
     }
 }
-four(x,score);
+four(x);
 var y=prompt("Is the Head tag means content ?yes/no");
 y=y.toLowerCase();
-function five(y,score) {
+function five(y) {
     if(y =="no")
     {alert("Correct answer"+name);
     score++;}
@@ -67,7 +67,7 @@ function five(y,score) {
     }
     
 }
-five(y,score);
+five(y);
 var num=Math.floor(Math.random() * 101);
 var g=prompt("guess a number between[0,100] you have only 4 opportunities");
 g=parseInt(g);
@@ -90,12 +90,13 @@ six(g,num);
 
 // var cars = ["FERRARI", "VOLVO", "BMW","FORD" ,"LAMBORGHINI","MCLAREN ","BUGATTI CHIRON"];
 var favColor = ['black', 'blue', 'gray', 'red', 'yellwo', 'green', 'white', 'softwhite', 'darkgray', 'Ivory'];
-function seven(favColor,score) {
+function seven(favColor) {
     for(var x = 0; x < 6; x++){
     var userAnswer = prompt('Guess one of my fav colors and type it here?').toLowerCase();
         for (var j = 0; j < favColor.length; j++) {
             if( userAnswer === favColor[j]){
                 alert('Your Answer Is Corrct!!');
+                score++;
                 break ;}
            }
         if (userAnswer === favColor[j]){
@@ -104,10 +105,10 @@ function seven(favColor,score) {
             alert('Your Answer is incorrect, Try again');}
     }
         
-    alert("Your score is"+score+"/7");
+    
 }
-seven(favColor,score);
-
+seven(favColor);
+alert("Your score is "+score+"/7");
 console.log("Is Html stands for hypertext markup language?yes/no");
 console.log("Is CSS stand for Cascading Style Sheets?yes/no");
 console.log("Is  JavaScript a programming language?yes/no");
