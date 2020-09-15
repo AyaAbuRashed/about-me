@@ -3,65 +3,65 @@ var score=0;
 var name =prompt("write your name");
 console.log("welcome "+name );
 alert("welcome"+name);
-var a=prompt("Is Html stands for hypertext markup language?yes/no");
+var a=prompt("Is Html stands for hypertext markup language?yes/no(y/n)");
 a=a.toLowerCase();
 
 function first(a) {
-    if(a =="yes")
+    if(a =="yes" || a==="y")
     {alert("Correct answer");
     score++;}
-    else if (a=="no")
+    else if (a=="no" || a==="n")
     {
         alert("InCorrect answer");
     }
 }
 first(a);
-var b=prompt("Is CSS stand for Cascading Style Sheets?yes/no");
+var b=prompt("Is CSS stand for Cascading Style Sheets?yes/no(y/n)");
 b=b.toLowerCase();
 ;
 function second(b) {
-    if(b=="yes")
+    if(b=="yes" || b==="y")
     {alert("Correct answer");
     score++;}
-    else if (b=="no")
+    else if (b=="no" || b==="n")
     {
         alert("InCorrect answer");
     }
 }
 second(b);
-var c=prompt("Is  JavaScript a programming language?yes/no");
+var c=prompt("Is  JavaScript a programming language?yes/no(y/n)");
 c=c.toLowerCase();
 
 function third(c) {
-    if(c =="yes")
+    if(c =="yes" || c==="y")
     {alert("Correct answer");
     score++;}
-    else if (c=="no")
+    else if (c=="no" || c==="n")
     {
         alert("InCorrect answer");
     }
 }
 third(c);
-var x=prompt("Is JavaScript written in CSS?yes/no");
+var x=prompt("Is JavaScript written in CSS?yes/no(y/n)");
 x=x.toLowerCase();
 
 function four(x) {
-    if(x =="no")
+    if(x =="no" || x==="n")
     {alert("Correct answer");
     score++;}
-    else if (x=="yes")
+    else if (x=="yes" || x==="y")
     {
         alert("InCorrect answer");
     }
 }
 four(x);
-var y=prompt("Is the Head tag means content ?yes/no");
+var y=prompt("Is the Head tag means content ?yes/no(y/n)");
 y=y.toLowerCase();
 function five(y) {
-    if(y =="no")
+    if(y =="no" || y==="n")
     {alert("Correct answer"+name);
     score++;}
-    else if (y=="yes")
+    else if (y=="yes" || y==="y")
     {
         alert("InCorrect answer"+name);
     }
@@ -88,7 +88,7 @@ function six(g,num) {
 }
 six(g,num);
 
-// var cars = ["FERRARI", "VOLVO", "BMW","FORD" ,"LAMBORGHINI","MCLAREN ","BUGATTI CHIRON"];
+
 var favColor = ['black', 'blue', 'gray', 'red', 'yellwo', 'green', 'white', 'softwhite', 'darkgray', 'Ivory'];
 function seven(favColor) {
     for(var x = 0; x < 6; x++){
@@ -109,11 +109,5 @@ function seven(favColor) {
 }
 seven(favColor);
 alert("Your score is "+score+"/7");
-console.log("Is Html stands for hypertext markup language?yes/no");
-console.log("Is CSS stand for Cascading Style Sheets?yes/no");
-console.log("Is  JavaScript a programming language?yes/no");
-console.log("Is JavaScript written in CSS?yes/no");
-console.log("Is the Head tag means content ?yes/no");
-console.log("guess a number between[0,100] you have only 4 opportunities");
-console.log("guess one of the top fastest car in the world");
+
 
